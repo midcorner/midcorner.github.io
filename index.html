@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>SamCreative</title>
+
+    <!-- Style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+        :root{
+            --Pr-Font : 'Poppins';
+            --Sr-Font : 'Noto Sans';
+
+            --Hover : #614cbe;
+            --Pr-Color : #7456ff;
+            --Sr-Color : #A693FF;
+
+            --Pr-Cont : #19152A;
+            --Sr-Cont : #16112d;}
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;}
+
+        body {
+            background-position: center;
+            font-family: var(--Pr-Font);
+            color: white;}
+
+        body::-webkit-scrollbar{
+            display: none;}
+
+        section{
+            width: 100%;
+            left: 0;
+            top: 0;
+            padding: 0px 120px;}
+    </style>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+
+<body>
+    <!---------------------------------------- AUDIO ------------------------------------>
+    <audio id="myAudio" autoplay loop>
+        <source src="assets/dark-bgm.mp3" type="audio/mp3">
+    </audio>
+    <!----------------------------------------------------------------------------------->
+
+    
+    <!---------------------------------------  NAVBAR ----------------------------------->
+    <header>
+        <div class="nav-container">
+
+            <!-- Branding -->
+            <div class="branding" onclick="reload()"><span>Sam</span>Creative</div>
+
+            <!-- Menu -->
+            <ul>
+                <li><a class="menu-home" href="#hero">Home</a></li>
+                <li><a class="menu-about" href="#about">About</a></li>
+                <li><a class="menu-project" href="#project">Project</a></li>
+                <li><a class="menu-contact" href="#contact-us">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Behind Navbar -->
+    <div class="behind"></div>
+    <!----------------------------------------------------------------------------------->
+
+       
+    <!---------------------------------------- HERO ------------------------------------->
+    <section id="hero">
+        <div class="hero-container">
+
+            <!-- Identity -->
+            <div class="identity">UI <span>/</span> UX Design Production</div>
+
+            <!-- Tagline -->
+            <div class="tag-line">Visualize Your Idea <br> Into Cool Product</div>
+
+            <!-- Call to Action -->
+            <div class="cta-started"><button type="button" onclick="started()">Get Started</button></div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+                <div class="text">Find Me On</div>
+                <!-- Social Media Icon -->
+                <ul>
+                    <li class="facebook"><a class="fb" href="https://www.facebook.com/profile.php?id=100005822657459" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="instagram"><a class="ig" href="https://www.instagram.com/sammyrsh/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="whatsapp"><a class="wa" href="https://wa.me/628993415875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li class="linkedin"><a class="ld" href="https://www.linkedin.com/in/dimas-ardiansyah-363681214/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Image -->
+            <div class="image">
+
+                <!-- Main Picture -->
+                <div class="img">
+                    <img src="assets/dimas.png" alt="dimas">
+                </div>
+
+                <!-- Web App -->
+                <div class="web-container">
+                    <div class="web-app">Web App Design</div>
+                </div>
+
+                <!-- Socmed Content -->
+                <div class="socmed-container">
+                    <div class="socmed-content">Social Media Content Design</div>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="mobile-container">
+                    <div class="mobile-app">Mobile App Design</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------- STATISTICS ------------------------------->
+    <section id="statistic">
+
+        <!-- Overlay -->
+        <div class="statistic-overlay">
+            <div class="statistic-overlay2">
+                <div class="statistic-container">
+
+                    <!-- Client Project -->
+                    <div class="client">
+                        <div class="count"><b>22</b></div>
+                        <div class="notes">
+                            <div class="notes-project">Project</div>
+                            <div class="notes-client">Client</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Design -->
+                    <div class="design">
+                        <div class="count"><b>30</b></div>
+                        <div class="notes">
+                            <div class="notes-product">Product</div>
+                            <div class="notes-design">Design</div>
+                        </div>
+                    </div>
+
+                    <!-- Completed Project -->
+                    <div class="project">
+                        <div class="count"><b>24</b></div>
+                        <div class="notes">
+                            <div class="notes-completed">Completed</div>
+                            <div class="notes-project">Project</div>
+                        </div>
+                    </div>
+
+                    <!-- Client Satisfaction -->
+                    <div class="satisfaction">
+                        <div class="count-container">
+                            <div class="count"><b>96</b></div>
+                            <div class="percentage">%</div>
+                        </div>
+                        <div class="notes">
+                            <div class="notes-client">Satisfied</div>
+                            <div class="notes-satisfaction">Client</div>
+                        </div>
+                    </div>
+
+                </div>  
+
+                <!-- Vector -->
+                <div class="vector"></div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!----------------------------------------- ABOUT ----------------------------------->
+    <section id="about">
+        <div class="about-container">
+
+            <!-- Subheading -->
+            <div class="about-subheading">Few Things About Us</div>
+
+            <!-- Heading -->
+            <div class="about-heading">Always Build<br>Top-Notch Design</div>
+
+            <!-- Menu -->
+            <div class="about-menu">
+                <ul>
+                    <li><a id="identity" class="stay" style="color: white;" onclick = "changedContent()">Who Are We</a></li>
+                    <li><a id="vision" class="stay" onclick = "changedContent2()">Our Vision</a></li>
+                    <li><a id="do" class="stay" onclick = "changedContent3()">What We Do</a></li>
+                </ul>
+            </div>
+
+            <!-- Paragraph -->
+            <div class="about-paragraph">
+                <p id="textContent">
+                    SamCreative is such a great community established to everyone who looking for the fantastic collaboration and experience in UI <span>/</span> UX design development.
+                    It is always works out to visualizing the idea of customer into the top-notch.
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div class="about-cta">
+                <button type="button" onclick="readMore()">Read More</button>
+            </div>
+
+            <!-- Image -->
+            <div class="about-image">
+                <div class="image-container">
+
+                    <!-- Image Box -->
+                    <div class="image-box">
+                        <div class="image-overlay">
+                            <div class="transition">
+                                <div class="text-overlay">Solutive</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Box 2 -->
+                    <div class="image-box2">
+                        <div class="image-overlay2">
+                            <div class="transition">
+                                <div class="text-overlay">Adaptive</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Box 3 -->
+                    <div class="image-box3">
+                        <div class="image-overlay3">
+                            <div class="transition">
+                                <div class="text-overlay">Collaborative</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------- SERVICE ----------------------------------->
+    <section id="service">
+        <div class="service-container">
+
+            <!-- Subheading -->
+             <div class="service-subheading">Our Services</div> 
+
+             <!-- Heading -->
+             <div class="service-heading">
+                Creates Professional Design That's <br>Oriented Towards Client Needs
+             </div>
+
+             <!-- Content -->
+             <div class="service-content">
+                <div class="content-container">
+                    <!-- Box Container -->
+                    <div class="item-box">
+
+                        <!-- Item Card -->
+                        <div id="item-card">
+
+                            <!-- Content -->
+                            <div id="content-card">
+                                <div id="bg-image">
+                                    <img src="assets/socmed-content-col.png" alt="socmed" id="socmed" width="100%">
+                                    <div id="image-overlay"></div>
+                                </div>
+                            </div>
+
+                            <!-- Title -->
+                            <div id="title-card">Social Media Content Design <br> <p id="paragraph"></p></div>
+                        </div>   
+
+                        <!-- Item Card 2 -->
+                        <div id="item-card2">
+
+                            <!-- Content -->
+                            <div id="content-card2">
+                                <div id="bg-image2">
+                                    <img src="assets/mobile-app-hov.png" alt="mobile" id="mobile" width="100%">
+                                    <div id="image-overlay2"></div>
+                                </div>
+                            </div>
+
+                            <!-- Title -->
+                            <div id="title-card2">Mobile Application Design <br>
+                                <p id="paragraph2"> Creative design takes an important role on mobile applications as user attraction to the interfaces. </p>
+                            </div>
+                        </div>    
+
+                        <!-- Item Card 3 -->
+                        <div id="item-card3">
+
+                            <!-- Content -->
+                            <div id="content-card3">
+                                <div id="bg-image3">
+                                    <img src="assets/web-app-col.png" alt="web" id="web" width="100%">
+                                    <div id="image-overlay3"></div>
+                                </div>
+                            </div>
+
+                            <!-- Title -->
+                            <div id="title-card3">Web Application Design <br> <p id="paragraph3"></p></div>
+                        </div>
+                    </div>         
+                </div>
+
+                <!-- Content Vector -->
+                <div class="content-vector"></div>
+             </div>
+
+             <!-- Slide Button -->
+             <div class="service-button">
+                <div class="btn-container">
+                   <button class="control" id="btn1" onclick="changedItem()"></button>
+                   <button class="control" id="btn2" onclick="changedItem2()" style="background: var(--Hover); width:50px"></button>
+                   <button class="control" id="btn3" onclick="changedItem3()"></button>
+                </div>
+             </div>
+
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!-------------------------------------- PROJECT ------------------------------------>
+    <section id="project">
+        <div class="project-container">
+
+            <!-- Line Vector -->
+            <div class="project-vector"></div>
+
+            <!-- Subheading -->
+            <div class="project-subheading">Our Latest Project</div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+
+                <!-- Content 1 -->
+                <div class="content1">
+                    <!-- Content Image -->
+                    <div class="content-image">
+                        <img src="assets/dartly.png" alt="dartly" height="100%">
+                    </div>
+                    <!-- Content Heading -->
+                    <div class="content-heading">DARTLY - NFT Market Place</div>
+                    <!-- Content Star -->
+                    <div class="content-star">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li class="number">5.0</li>
+                        </ul>
+                    </div>
+                    <!-- Content Description -->
+                    <div class="content-description">DARTLY is a digital market place for crypto collectibles and non-fungible tokens (NFTs).</div>
+                    <!-- Content Bottom -->
+                    <div class="content-bottom">
+                        <div class="bottom-price">For $119.00</div>
+                        <div class="bottom-cta"><button onclick="window.open('https://dribbble.com/shots/19866642-NFTS-Website-Design')">View Details</button></div>
+                    </div>
+                </div>
+
+                <!-- Content 2 -->
+                <div class="content2">
+                    <!-- Content Image -->
+                    <div class="content-image2">
+                        <div class="bg-image"></div>
+                    </div>
+                    <!-- Content Heading -->
+                    <div class="content-heading2">Genoom - Games Store App</div>
+                    <!-- Content Star -->
+                    <div class="content-star2">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star" id="half"></i></li>
+                            <li class="number">4.5</li>
+                        </ul>
+                    </div>
+                    <!-- Content Description -->
+                    <div class="content-description2"> Genoom is a digital video game store app for playing, discussing and creating games.</div>
+                    <!-- Content Bottom -->
+                    <div class="content-bottom2">
+                        <div class="bottom-price">For $105.00</div>
+                        <div class="bottom-cta"><button onclick="window.open('https://dribbble.com/shots/15710860-Game-Store-Streaming-App')">View Details</button></div>
+                    </div>
+                </div>
+
+                <!-- Content 3 -->
+                <div class="content3">
+                    <!-- Content Image -->
+                    <div class="content-image3">
+                        <div class="bg-image"></div>
+                    </div>
+                    <!-- Content Heading -->
+                    <div class="content-heading3">ExBay - Xbox Controller Store</div>
+                    <!-- Content Star -->
+                    <div class="content-star3">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star" id="blank"></i></li>
+                            <li class="number">4.0</li>
+                        </ul>
+                    </div>
+                    <!-- Content Description -->
+                    <div class="content-description3"> Make your gaming experience more immersive with ExBay controllers for Xbox Series.</div>
+                    <!-- Content Bottom -->
+                    <div class="content-bottom3">
+                        <div class="bottom-price">For $97.00</div>
+                        <div class="bottom-cta"><button onclick="window.open('https://dribbble.com/shots/16335225-Xbox-Wireless-Controller')">View Details</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Email -->
+            <div class="project-email">
+
+                <!-- Heading -->
+                <div class="email-heading">Have any project in mind ?</div>
+
+                <!-- Subheading -->
+                <div class="email-subheading">We are available for your fantastic idea</div>
+
+                <!-- More Project -->
+                <div class="email-cta">
+                    <button class="more" onclick="window.open('https://dribbble.com/')">More Project</button>
+                    <button class="email" onclick="window.open('mailto:dimasarsmith@gmail.com')">Email Us</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!-- WHY CHOOSE US -->
+    <section id="choose-us">
+        <div class="choose-us-container">
+
+            <!-- Subheading -->
+            <div class="choose-subheading">Why Choose Us</div>
+
+            <!-- Heading -->
+            <div class="choose-heading">Enhance Your Brand Exposure <br> With Good Design Product</div>
+
+            <!-- Vector -->
+            <div class="choose-vector"></div>
+        
+            <!-- Content -->
+            <div class="choose-content">
+
+                <!-- Item 1 -->
+                <div class="item-wrapper">
+                    <!-- Box -->
+                    <div class="item-box">
+                        <div class="heading">Years of Experience</div>
+                        <div class="description">
+                            With an experential period that less than a five years,
+                            we have been successfully verified as a compatible company.
+                        </div>
+                    </div>
+                    <!-- Circle -->
+                    <div class="item-circle">
+                        <div class="inner-circle">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="item-wrapper2">
+                    <!-- Box -->
+                    <div class="item-box">
+                        <div class="heading">Client's Goal Oriented</div>
+                        <div class="description">
+                            SamCreative is heavily invested in the success of our clients.
+                            We believe that client's needs are of utmost importance.
+                        </div>
+                    </div>
+                    <!-- Circle -->
+                    <div class="item-circle">
+                        <div class="inner-circle">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="item-wrapper3">
+                    <!-- Box -->
+                    <div class="item-box">
+                        <div class="heading">Good Quality Control</div>
+                        <div class="description">
+                            Good quality is a vital principles. 
+                            SamCreative is consistently with high quality standards to give a most worthy results.
+                        </div>
+                    </div>
+                    <!-- Circle -->
+                    <div class="item-circle">
+                        <div class="inner-circle">
+                            <img src="assets/verified.png" alt="verified">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="item-wrapper4">
+                    <!-- Box -->
+                    <div class="item-box">
+                        <div class="heading">Dedicated Super Team</div>
+                        <div class="description">
+                            Behind the successfull project, they have a super team in there.
+                            Hence we are prioritize a good collaboration team.
+                        </div>
+                    </div>
+                    <!-- Circle -->
+                    <div class="item-circle">
+                        <div class="inner-circle">
+                            <img src="assets/super.png" alt="super">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subheading 2 -->
+            <div class="choose-subheading2">Features That's Blow Mind</div>
+
+            <!-- Accordion -->
+            <div class="choose-accordion">
+
+                <!-- FAQ 1 -->
+                <div class="faq">
+                    <details>
+                        <summary>Provide Full Consultation</summary>
+                        <div>
+                            We offer consultations to all prospective clients. We believe to understand your viewpoint is extremely necessary as it is a crucial factor to know what your desires and expectations are. Before beginning our project ahead, we believe that planning is the central priority of all in order to save time. A connection from our initial meeting until our work concludes is necessary so consulting with each other is perfect in understanding your needs.
+                        </div>
+                      </details>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq2">
+                    <details>
+                        <summary>Guarantee Our Work Project</summary>
+                        <div>
+                            Our work has always satisfied all of our client's expectations.
+                            We provide overall handling when you are with us and if your satisfaction level does not match the work, we fix it at no cost. 
+                            Imagine always believes in keeping the word it speaks so client's satisfaction and our guarantee is always a hand-in-hand process. 
+                            Our strong team ethics and ability to discuss a task at a convenient meeting point are noticeably helpful to get things done.
+                        </div>
+                      </details>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq3">
+                    <details>
+                        <summary>Fixed Price and No Surprises</summary>
+                        <div>
+                            Our prices are competitive and fair. There are no surprise bills later. 
+                            Any unexpected or additional expenses must be pre-approved by you. 
+                            With the level of our hard work and time effort, we give you the fixed price as we have gone through our many years in the business.
+                            A reliable and fixed price is worth while for investing in the design that we build for you.
+                            That is how we would like to be treated and how our clients are treated.
+                        </div>
+                      </details>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!------------------------------------- TESTIMONIALS -------------------------------->
+    <section id="testimonials">
+
+        <!-- Subheading -->
+        <div class="subheading">Our Testimonials</div>
+
+        <!-- Heading -->
+        <div class="heading">What They Say About Us</div>
+
+        <!-- Testimonials Container -->
+        <div class="testimonials container">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <!-- Image -->
+                            <div class="image-testi">
+                                <div class="image-wrapper">
+                                    <img src="assets/kio.png" alt="kio" width="350px" height="auto">
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment"><p>SamCreative has a great communicator, always meets deadlines, and great understanding of UX. Most importantly, they have strong workflows that allow us to work remotely in a very efficient and productive way. We will continue working with SamCreative.</p></div>
+                            <!-- Name -->
+                            <div class="name">Kio Putri</div>
+                            <!-- Position -->
+                            <div class="position">System Analyst at ExBay</div>
+                        </div>
+                    </div>
+
+                    <!-- Slides 2 -->
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <!-- Image -->
+                            <div class="image-testi">
+                                <div class="image-wrapper">
+                                    <img src="assets/iqbal.png" alt="iqbal" width="350px" height="auto">
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment"><p>SamCreative is the best design community service providers that I have ever worked with. The designs they have created are allows for straight forward fixes throughout every area of the app. I am looking forward to partner up with them on upcoming projects.</p></div>
+                            <!-- Name -->
+                            <div class="name">Iqbal Hafish</div>
+                            <!-- Position -->
+                            <div class="position">Project Manager at Genoom</div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <!-- Image -->
+                            <div class="image-testi">
+                                <div class="image-wrapper">
+                                    <img src="assets/vita.png" alt="vita" width="350px" height="auto">
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment"><p>We worked with SamCreative on our company's web design. The designs they were provided are elegant, functional, and easy for our developers to implement. They also have a strong design workflows. We will be partnering up on many projects to come.</p></div>
+                            <!-- Name -->
+                            <div class="name">Vita Ayu</div>
+                            <!-- Position -->
+                            <div class="position">Front-End Developer at DARTLY</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!------------------------------------- CONTACT US ---------------------------------->
+    <section id="contact-us" class="contact">
+        <div class="contact-container">
+
+            <!-- Left Content -->
+            <div class="contact-left">
+                <div class="left-container">
+
+                    <!-- Heading -->
+                    <div class="heading"> We Are Here Help You To Grow Your Brand Identity </div>
+
+                    <!-- Paragraph -->
+                    <div class="paragraph">
+                        <p>Have a question about how to make your design attractive? Fill out the form and our team expert will be in touch directly.</p>
+                    </div>
+
+                    <!-- Office -->
+                    <div class="office"> Our Office</div>
+
+                    <!-- Bg Office -->
+                    <div class="bg-office">
+                        <div class="overlay">
+                            <div class="overlay2"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="contact-right">
+                <form action="https://formsubmit.co/dimasarsmith@gmail.com" method="POST">
+                    <div class="right-container">
+                        <!-- First Name -->
+                        <div id="input-first-name" class="input-group">
+                            <label for="name" class="text-label">First Name</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="First-Name"
+                                   placeholder="First Name"
+                                   autocomplete="off"
+                                   required>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div id="input-last-name" class="input-group">
+                            <label for="name" class="text-label">Last Name</label>
+                            <input type="text"
+                                   id="name"
+                                   name="Last-Name"
+                                   placeholder="Last Name"
+                                   autocomplete="off"
+                                   required>
+                        </div>
+
+                        <!-- Email -->
+                        <div id="input-email" class="input-group">
+                            <label for="email" class="text-label">Email</label>
+                            <input type="email" 
+                                   id="email"
+                                   name="Email"
+                                   placeholder="Email"
+                                   autocomplete="off"
+                                   required>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div id="input-phone" class="input-group">
+                            <label for="phone" class="text-label">Phone Number</label>
+                            <input type="tel"
+                                   id="email"
+                                   name="Phone-Number"
+                                   placeholder="+62 - XXXX - XXXX -XXXX"
+                                   autocomplete="off"
+                                   required>
+                        </div>
+
+                        <!-- Message -->
+                        <div id="input-message" class="input-group">
+                            <label for="message" class="text-label">Message</label>
+                            <textarea id="message"
+                                      name="Message"
+                                      placeholder="Message"
+                                      required></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <div id="input-submit" class="input-group">
+                            <input type="submit" id="submit" value="Send Message">
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------- FOOTER ------------------------------------>
+    <footer>
+        <div class="footer-container">
+            
+            <!-- Main Content -->
+            <div class="main-content">
+
+                <!-- Branding -->
+                <div class="branding"><span>Sam</span>Creative</div>
+
+                <!-- Opening Hours -->
+                <div class="opening-hours">
+                    <div class="heading">Opening Hours</div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td>Weekday</td>
+                                <td>:</td>
+                                <td>08:00 AM - 07:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Weekend</td>
+                                <td>:</td>
+                                <td>08:00 AM - 06:00 PM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="address">
+                    <div class="heading">Address</div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td>Jakarta B2 <span>/</span> 01, Sooko Sub-District</td>
+                            </tr>
+                            <tr>
+                                <td>Mojokerto District, East Java 61361</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="contact">
+                    <div class="heading">Contact</div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i></td>
+                                <td>:</td>
+                                <td>+62 899-3415-875</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i></td>
+                                <td>:</td>
+                                <td>dimasarsmith@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Content -->
+            <div class="bottom-content">
+
+                <!-- Left -->
+                <div class="left">
+                    <ul>
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+
+                <!-- Center -->
+                <div class="center">&copy; 2022 SamCreative | All Rights Reserved</div>
+
+                <!-- Right -->
+                <div class="right">Made By Dimas Ardiansyah</div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- WayPoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- Counter Up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- Java Script -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
